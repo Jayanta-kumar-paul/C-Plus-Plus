@@ -20,7 +20,7 @@ public:
 
     void output()
     {
-        cout << "The sum is " << sum ;
+        cout << "The sum is " << sum << endl;
     }
     };
 
