@@ -4,7 +4,7 @@
 class TemperatureConverter
 {
 private:
-    double celsius;
+    int celsius;
 
 public:
     void input()
@@ -13,22 +13,20 @@ public:
         std::cin >> celsius;
     }
 
-    double convertToFahrenheit()
+    void convertToFahrenheit()
     {
-        return (celsius * 9.0 / 5.0) + 32.0;
+        float fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+        std::cout << "Temperature in Fahrenheit: " << fahrenheit << std::endl;
     }
 
-    void output()
-    {
-        std::cout << "Temperature in Fahrenheit: " << convertToFahrenheit() << std::endl;
-    }
+  
 };
 
 int main()
 {
     TemperatureConverter obj;
     obj.input();
-    obj.output();
+    obj.convertToFahrenheit();
 
     return 0;
 }
