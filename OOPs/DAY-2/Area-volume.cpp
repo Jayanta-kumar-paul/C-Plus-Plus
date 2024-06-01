@@ -34,3 +34,8 @@ int main()
 
     return 0;
 }
+// Enter the length, width, and height of the room: 2
+// 3
+// 4
+// The area of the room is: 6
+// The volume of the room is: 24
