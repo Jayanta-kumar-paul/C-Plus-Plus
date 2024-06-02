@@ -65,3 +65,60 @@ int main()
     student.displayResults();
     return 0;
 }
+
+
+// #include <iostream>
+// #include <iomanip> // Include this for formatting
+
+// using namespace std;
+
+// class Student
+// {
+// public:
+//     int mark1, mark2, mark3, mark4, mark5;
+
+//     void inputMarks()
+//     {
+//         cout << "Enter Bengali mark 1: ";
+//         cin >> mark1;
+//         cout << "Enter English mark 2: ";
+//         cin >> mark2;
+//         cout << "Enter Mathematics mark 3: ";
+//         cin >> mark3;
+//         cout << "Enter Computer Sc. mark 4: ";
+//         cin >> mark4;
+//         cout << "Enter Biology mark 5: ";
+//         cin >> mark5;
+//     }
+
+//     int calculateTotal()
+//     {
+//         return mark1 + mark2 + mark3 + mark4 + mark5; // Add return statement
+//     }
+
+//     double calculateAverage()
+//     {
+//         return calculateTotal() / 5.0; // Add return statement
+//     }
+
+//     double calculatePercentage()
+//     {
+//         return (calculateTotal() / 500.0) * 100.0; // Add return statement
+//     }
+
+//     void displayResults()
+//     {
+//         cout << fixed << setprecision(2); // Set precision for percentage
+//         cout << "\nTotal: " << calculateTotal() << endl;
+//         cout << "Average: " << calculateAverage() << endl;
+//         cout << "Percentage: " << calculatePercentage() << "%" << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Student student;
+//     student.inputMarks();
+//     student.displayResults();
+//     return 0;
+// }
