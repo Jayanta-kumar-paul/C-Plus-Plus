@@ -1,26 +1,43 @@
-// c++ program that calculates the power of a number (x ^ y) without using a function:
+// c++ program that calculates the power of a number (x ^ y)  using class obj:
 
 #include <iostream>
 using namespace std;
 
-int main() 
+class PowerCalculator 
 {
+public:
     double x;
     int y;
 
-    cout << "Enter base (x): ";
-    cin >> x;
-    cout << "Enter power (y): ";
-    cin >> y;
-
-    double result = 1.0;
-    for (int i = 0; i < y; i++)
+    void input() 
     {
-        result *= x;
+        cout << "Enter base (x): ";
+        cin >> x;
+        cout << "Enter power (y): ";
+        cin >> y;
     }
 
-    cout << x << " raised to the power of " << y << " is: " << result << endl;
+    double calculate() 
+    {
+        double result = 1.0;
+        for (int i = 0; i < y; i++) 
+        {
+            result *= x;
+        }
+        return result;
+    }
 
+    void display() 
+    {
+        cout <<  "The raised to the power of (x^y) is: " << calculate() << endl;
+    }
+};
+
+int main() 
+{
+    PowerCalculator calculator;
+    calculator.input();
+    calculator.display();
     return 0;
 }
 
