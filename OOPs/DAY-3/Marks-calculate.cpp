@@ -1,9 +1,14 @@
-//WAP c++ program to enter marks of five subjects and calculate total, average and percentage.
+//WAP c++ program to enter marks of five subjects and calculate total, average and percentage in class obj .
 #include <iostream>
+//#include <iomanip> // Include this for formatting
+
 using namespace std;
 
 class Student
 {
+private:
+    int total;
+    double average, percentage;
 public:
     int mark1, mark2, mark3, mark4, mark5;
 
@@ -21,27 +26,36 @@ public:
         cin >> mark5;
     }
 
-    int calculateTotal()
+    void calculateTotal()
     {
-        return mark1 + mark2 + mark3 + mark4 + mark5;
+        // No explicit return statement; update a member variable instead
+        total = mark1 + mark2 + mark3 + mark4 + mark5;
     }
 
-    double calculateAverage()
+    void calculateAverage()
     {
-        return calculateTotal() / 5.0;
+        // No explicit return statement; update a member variable instead
+        average = total / 5.0;
     }
 
-    double calculatePercentage()
+    void calculatePercentage()
     {
-        return (calculateTotal() / 500.0) * 100;
+        // No explicit return statement; update a member variable instead
+        percentage = (total / 500.0) * 100.0;
     }
 
     void displayResults()
     {
-        cout << "\nTotal: " << calculateTotal() << endl;
-        cout << "Average: " << calculateAverage() << endl;
-        cout << "Percentage: " << calculatePercentage() << "%" << endl;
+        calculateTotal();
+        calculateAverage();
+        calculatePercentage();
+
+       // cout << fixed << setprecision(2); // Set precision for percentage
+        cout << "\nTotal: " << total << endl;
+        cout << "Average: " << average << endl;
+        cout << "Percentage: " << percentage << "%" << endl;
     }
+
 };
 
 int main()
