@@ -29,7 +29,7 @@ public:
 
     void display() 
     {
-        cout <<  "The raised to the power of (x^y) is: " << calculate() << endl;
+        cout <<  "The raised to the power of  (x^y) is: " << calculate() << endl;
     }
 };
 
