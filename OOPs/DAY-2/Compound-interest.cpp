@@ -1,11 +1,11 @@
-
+//C++ program to calculate compound interes using class objects.
 #include <iostream>
-#include<math.h>
+#include <math.h>
 
 class CompoundInterest
 {
 private:
-    double principal, rate, time, compoundedTimes;
+    double principal, rate, time;
 
 public:
     void input()
@@ -16,18 +16,12 @@ public:
         std::cin >> rate;
         std::cout << "Enter the time (in years): ";
         std::cin >> time;
-        std::cout << "Enter the number of times interest is compounded per time period: ";
-        std::cin >> compoundedTimes;
     }
 
-    double calculate()
+    void calculate()
     {
-        return principal * ((1 + (rate / 100) / compoundedTimes), compoundedTimes * time);
-    }
-
-    void output()
-    {
-        std::cout << "Compound interest: " << calculate() << std::endl;
+        double result = principal * pow((1 + (rate / 100)), time);
+        std::cout << "Compound interest: " << result << std::endl;
     }
 };
 
@@ -35,7 +29,5 @@ int main()
 {
     CompoundInterest obj;
     obj.input();
-    obj.output();
-
-    return 0;
+    obj.calculate();
 }
