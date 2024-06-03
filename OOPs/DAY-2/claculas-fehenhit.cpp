@@ -1,30 +1,39 @@
-#include <iostream>
-class TemperatureConverter
-{
-private:
-    int celsius;
+// C++ program that converts Celsius to Fahrenheit and vice versa using class objects:
 
+#include <iostream>
+using namespace std;
+
+class Temperature
+{
 public:
+    float temp;
+
     void input()
     {
-        std::cout << "Enter the temperature in Celsius: ";
-        std::cin >> celsius;
+        cout << "Enter temperature: ";
+        cin >> temp;
     }
 
-    void convertToFahrenheit()
+    void convertCtoF()
     {
-        float fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
-        std::cout << "Temperature in Fahrenheit: " << fahrenheit << std::endl;
+        float F = (temp * 9 / 5) + 32;
+        cout << temp << " Celsius is " << F << " Fahrenheit" << endl;
     }
 
-  
+    void convertFtoC()
+    {
+        float C = (temp - 32) * 5 / 9;
+        cout << temp << " Fahrenheit is " << C << " Celsius" << endl;
+    }
 };
 
 int main()
 {
-    TemperatureConverter obj;
-    obj.input();
-    obj.convertToFahrenheit();
-
+    Temperature temp;
+    temp.input();
+    cout << "Convert to Fahrenheit: ";
+    temp.convertCtoF();
+    cout << "Convert to Celsius: ";
+    temp.convertFtoC();
     return 0;
 }
