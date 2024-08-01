@@ -8,7 +8,7 @@ class A
     int roll;
     void show()
     {
-        cout<<"My rool is :"<<roll<<endl;
+        cout<<"My roll is :"<<roll<<endl;
     }
 
     private:
@@ -41,6 +41,16 @@ int main()
     A obj;
     obj.roll=8;
     obj.show();
-    
+    // obj.age=19;
+    // obj.print();
+    // obj.marks=8;
+    // obj.show();
+     B obj1;
+    obj1.roll=8;
+    obj1.show();
+    obj1.name="JAYANTA";
+    obj1.getsdata();
+    // obj1.marks=8;
+    // obj1.display();
 
 }
