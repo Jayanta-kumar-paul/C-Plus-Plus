@@ -31,3 +31,9 @@ int main()
 
     return 0;
 }
+// Enter value of a and b in int: 5
+// 7
+// Enter value of a and b in float: 10.23
+// 10.27
+// The sum is integer value: 12
+// The sum is float value: 20.5
