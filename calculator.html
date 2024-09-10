@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: #FFFFE0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-gap: 10px;
+        }
+        .calculator input[type="text"] {
+            grid-column: span 4;
+            height: 40px;
+            text-align: right;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .calculator button {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            background-color: #E0E0E0;
+            border: 1px solid #A9A9A9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calculator button:active {
+            background-color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" readonly>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>÷</button>
+        <button>C</button>
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+    </div>
+</body>
+</html>
