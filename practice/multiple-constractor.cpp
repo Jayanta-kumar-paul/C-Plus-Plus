@@ -12,7 +12,6 @@ class Base1
 
 class Base2
 {
-
     public:
     Base2(int a,int b)
     {
